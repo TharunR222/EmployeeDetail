@@ -1,0 +1,61 @@
+.main-block {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-block {
+  width: 40%;
+  margin: 10px;
+}
+
+.show-block {
+  width: 60%;
+  margin: 20px;
+}
+
+.form-block form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-block form input {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.submit {
+  background-color: aqua;
+}
+
+.show-block table,
+th,
+td {
+  border: solid 1px;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.change-cell {
+  width: 20%;
+}
+
+.edit {
+  background-color: green;
+  padding: 5px 24px;
+  border-radius: 15px;
+  border: 0;
+  margin: 2px;
+}
+
+.delete {
+  background-color: red;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 2px;
+  border: 0;
+}
