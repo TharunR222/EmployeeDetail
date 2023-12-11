@@ -78,10 +78,10 @@ class PostData(Resource):
 
         except (Exception, psycopg2.Error) as error:
             print("Error with the database:", error)
-        finally:
-            if conn:
-                curr.close()
-                conn.close()
+        # finally:
+        #     if conn:
+        #         curr.close()
+        #         conn.close()
 
     def put(self):
         args = request.json
