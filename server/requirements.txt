@@ -13,4 +13,5 @@ packaging==23.2
 psycopg2==2.9.9
 pytz==2023.3.post1
 six==1.16.0
+waitress==2.1.2
 Werkzeug==3.0.1
