@@ -10,7 +10,7 @@ const MainPage = () => {
 
   const handleEdit = async (e, p1) => {
     setEditingItem(true);
-    let response = await fetch(`http://127.0.0.1:5000/updData/${p1}`, {
+    let response = await fetch(`https://employee-detail.onrender.com/updData/${p1}`, {
       method: 'GET'
     });
     let res = await response.json();
@@ -21,7 +21,7 @@ const MainPage = () => {
   }
 
   const handleDelete = async (e, p1) => {
-    let response = await fetch(`http://127.0.0.1:5000/updData/${p1}`, {
+    let response = await fetch(`https://employee-detail.onrender.com/updData/${p1}`, {
       method: 'DELETE'
     });
     let res = await response.json();
@@ -66,7 +66,7 @@ const MainPage = () => {
     if (value && valid) {
       console.log(formData);
       const func = async () => {
-        let response = await fetch("http://127.0.0.1:5000/postData", {
+        let response = await fetch("https://employee-detail.onrender.com/postData", {
           method: editingItem ? 'PUT' : 'POST',
           headers: {
             'Content-Type': 'application/json',
